@@ -16,11 +16,11 @@ DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
 CONFIG_FILE = "OrbitAI_config.json"
 PROMPT_FILE = "system-prompt.txt"
 
-DEFAULT_API_KEY = "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" 
+DEFAULT_API_KEY = "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" 
 DEFAULT_BASE_URL = "https://openrouter.ai/api/v1"
 DEFAULT_MODEL = "tngtech/deepseek-r1t2-chimera:free" 
 DEFAULT_LANGUAGE = "Thai"
-DEFAULT_AUTO_CHANNELS = [1421661337410601045] 
+DEFAULT_AUTO_CHANNELS = [1429918866607444018] 
 
 SITE_URL = "https://github.com/" 
 SITE_NAME = "OrbitAI Discord Bot" 
