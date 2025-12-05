@@ -1,5 +1,5 @@
 {
-  "api_key": "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",
+  "api_key": "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",
   "base_url": "https://openrouter.ai/api/v1",
   "model": "tngtech/deepseek-r1t2-chimera:free",
   "language": "Thai",
@@ -7,4 +7,5 @@
     1441740398681915442,
     1421661337410601045
   ]
+
 }
