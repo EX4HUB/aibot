@@ -11,6 +11,8 @@ from datetime import datetime
 
 from myserver import server_on
 
+DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
+
 CONFIG_FILE = "OrbitAI_config.json"
 PROMPT_FILE = "system-prompt.txt"
 
@@ -281,7 +283,7 @@ if __name__ == "__main__":
          
     try:
         server_on()
-        bot.run(os.getenv('DISCORD_TOKEN'))
+        bot.run(DISCORD_TOKEN)
             
     except discord.errors.LoginFailure:
         print("FATAL ERROR: Invalid Discord Bot Token.", file=sys.stderr)
