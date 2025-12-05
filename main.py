@@ -166,7 +166,7 @@ async def on_message(message):
                 description=response_text,
                 color=discord.Color.blue()
             )
-            embed.set_footer(text="OrbitAI |By kill")
+            embed.set_footer(text="OrbitAI |คนหล่อ")
             await message.reply(embed=embed)
             return 
 
@@ -186,7 +186,7 @@ async def on_message(message):
                 description=response_text,
                 color=discord.Color.blue()
             )
-            embed.set_footer(text="OrbitAI |By kill")
+            embed.set_footer(text="OrbitAI |คนหล่อ")
             await message.reply(embed=embed)
             return
 
