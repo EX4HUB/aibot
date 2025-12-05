@@ -131,12 +131,19 @@ def call_api(user_input):
 @bot.event
 async def on_ready():
     print(f'🤖 OrbitAI Bot is ready. Logged in as {bot.user}')
-    
+    await bot.change_presence(activity=discord.Streaming(name="กำลังเล่น GTA V", url="https://www.twitch.tv/YOUR_STREAM_URL"))
     try:
         synced = await tree.sync()
         print(f"✅ Synced {len(synced)} slash commands.")
     except Exception as e:
         print(f"❌ Failed to sync slash commands: {e}", file=sys.stderr)
+
+            with open('image.gif', 'rb') as avatar:
+            await bot.user.edit(avatar=avatar.read())  # ใช้ bot แทน client
+        print('Animated avatar uploaded successfully!')
+    except Exception as e:
+        print("Failed to upload animated avatar:", e)
+
     
     config = load_config()
     print(f"Current Model: {config['model']}")
