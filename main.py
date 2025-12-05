@@ -138,12 +138,6 @@ async def on_ready():
     except Exception as e:
         print(f"❌ Failed to sync slash commands: {e}", file=sys.stderr)
 
-            with open('image.gif', 'rb') as avatar:
-            await bot.user.edit(avatar=avatar.read())  # ใช้ bot แทน client
-        print('Animated avatar uploaded successfully!')
-    except Exception as e:
-        print("Failed to upload animated avatar:", e)
-
     
     config = load_config()
     print(f"Current Model: {config['model']}")
