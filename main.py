@@ -16,7 +16,7 @@ DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
 CONFIG_FILE = "OrbitAI_config.json"
 PROMPT_FILE = "system-prompt.txt"
 
-DEFAULT_API_KEY = "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" 
+DEFAULT_API_KEY = "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" 
 DEFAULT_BASE_URL = "https://openrouter.ai/api/v1"
 DEFAULT_MODEL = "tngtech/deepseek-r1t2-chimera:free" 
 DEFAULT_LANGUAGE = "Thai"
