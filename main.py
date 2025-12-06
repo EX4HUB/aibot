@@ -131,7 +131,7 @@ def call_api(user_input):
 @bot.event
 async def on_ready():
     print(f'🤖 OrbitAI Bot is ready. Logged in as {bot.user}')
-    await bot.change_presence(activity=discord.Streaming(name="กำลังเล่น GTA V", url="https://www.twitch.tv/YOUR_STREAM_URL"))
+    await bot.change_presence(activity=discord.Streaming(name="OrbitAI", url="https://www.twitch.tv/YOUR_STREAM_URL"))
     try:
         synced = await tree.sync()
         print(f"✅ Synced {len(synced)} slash commands.")
